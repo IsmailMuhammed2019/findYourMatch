@@ -1,9 +1,8 @@
 import { NextResponse } from 'next/server';
-
-import { db } from '@vercel/postgres';
+import { createClient } from '@vercel/postgres'; // Change this import
 
 export async function POST(req: Request) {
-  const client = await db.connect();
+  const client = createClient(); // Use createClient() instead of db.connect()
 
   try {
     const body = await req.json();
@@ -81,6 +80,6 @@ export async function POST(req: Request) {
     console.error('Error checking profile:', error);
     return NextResponse.json({ error: 'profile-check-failed' }, { status: 500 });
   } finally {
-    client.release();
+    await client.end(); // Ensure to close the client connection
   }
 }
