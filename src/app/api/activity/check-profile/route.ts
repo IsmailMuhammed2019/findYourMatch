@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-
-import { createClient } from '@vercel/postgres'; // External library
+import { createClient } from '@vercel/postgres'; // Change this import
 
 export async function POST(req: Request) {
   const client = createClient(); // Use createClient() instead of db.connect()
