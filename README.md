@@ -18,6 +18,10 @@ The project was implemented using functional components and popular hooks in Rea
 
 5. **Real-Time Features**: Implemented chat functionality allows users to communicate once matched. Notifications for likes and visits are provided to enhance user engagement.
 
+6. **Version Control**: The code is hosted on GitHub and made publicly accessible. The repository can be found at [https://github.com/jesuisstan/matcha-find-your-date](https://github.com/jesuisstan/matcha-find-your-date).
+
+7. **Deployment**: The application is deployed on Vercel, providing fast global access. Visit the application at [https://matcha-find-your-date.vercel.app](https://matcha-find-your-date.vercel.app)
+
 ## Results
 
 The deployed version of the app allows users to:

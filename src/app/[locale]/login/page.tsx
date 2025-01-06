@@ -175,7 +175,7 @@ const Login = () => {
                 target="_blank"
                 className="my-6 text-center text-sm text-c42green transition-all duration-300 ease-in-out hover:text-c42orange"
               >
-                Ismail Muhammed
+                Stan Krivtsoff
               </a>
               {'. '}
               {t(`rights-reserved`)}
