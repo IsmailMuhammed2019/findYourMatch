@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+
 import { createClient } from '@vercel/postgres'; // External library
 
 export async function POST(req: Request) {
