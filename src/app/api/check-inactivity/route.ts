@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+
 import { createClient } from '@vercel/postgres'; // Change this import
 
 const INACTIVITY_PERIOD_MINUTES = 15;
