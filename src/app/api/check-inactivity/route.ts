@@ -1,11 +1,10 @@
 import { NextResponse } from 'next/server';
-
-import { createClient } from '@vercel/postgres'; // Change this import
+import { createClient } from '@vercel/postgres'; // Ensure this import is correct
 
 const INACTIVITY_PERIOD_MINUTES = 15;
 
 export async function GET() {
-  const client = createClient(); // Use createClient() instead of db.connect()
+  const client = createClient(); // Use createClient() to connect
 
   try {
     // SQL query to update users' online status based on inactivity
